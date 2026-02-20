@@ -1,0 +1,21 @@
+{
+  "model_name": "LLaMA-3.1 (Groq)",
+  "num_records": 25,
+  "jsvs": 1.0,
+  "smr": 1.0,
+  "field_completeness_before": {
+    "mechanism_summary": 0.0,
+    "safety_notes": 0.0,
+    "primary_indications": 0.48
+  },
+  "field_completeness_after": {
+    "mechanism_summary": 1.0,
+    "safety_notes": 1.0,
+    "primary_indications": 1.0
+  },
+  "hdm": 0.56,
+  "hdm_threshold": 0.1,
+  "fce_mean_jaccard": 0.11377584196914205,
+  "latency_ms_mean": null,
+  "throughput_rec_per_min": 36.891123080886885
+}

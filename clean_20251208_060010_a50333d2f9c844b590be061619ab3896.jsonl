@@ -1,0 +1,20 @@
+{"id": 1, "source": "test", "text": "hello from airflow", "text_length": 18, "processed_at": "2025-12-08T06:00:10.080049"}
+{"id": 2, "source": "test", "text": "second message", "text_length": 14, "processed_at": "2025-12-08T06:00:10.080067"}
+{"id": 1, "source": "test", "text": "message 1 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080072"}
+{"id": 2, "source": "test", "text": "message 2 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080077"}
+{"id": 3, "source": "test", "text": "message 3 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080081"}
+{"id": 4, "source": "test", "text": "message 4 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080085"}
+{"id": 5, "source": "test", "text": "message 5 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080088"}
+{"id": 6, "source": "test", "text": "message 6 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080092"}
+{"id": 7, "source": "test", "text": "message 7 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080096"}
+{"id": 8, "source": "test", "text": "message 8 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080100"}
+{"id": 9, "source": "test", "text": "message 9 from airflow demo", "text_length": 27, "processed_at": "2025-12-08T06:00:10.080104"}
+{"id": 10, "source": "test", "text": "message 10 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080108"}
+{"id": 11, "source": "test", "text": "message 11 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080111"}
+{"id": 12, "source": "test", "text": "message 12 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080115"}
+{"id": 13, "source": "test", "text": "message 13 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080119"}
+{"id": 14, "source": "test", "text": "message 14 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080123"}
+{"id": 15, "source": "test", "text": "message 15 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080126"}
+{"id": 16, "source": "test", "text": "message 16 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080130"}
+{"id": 17, "source": "test", "text": "message 17 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080134"}
+{"id": 18, "source": "test", "text": "message 18 from airflow demo", "text_length": 28, "processed_at": "2025-12-08T06:00:10.080138"}

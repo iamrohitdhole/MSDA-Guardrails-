@@ -1,0 +1,69 @@
+=== AUGMENTATION REPORT ===
+Input Delta:  /Users/spartan/data-pipeline/project_demo/lake/silver/silver_good_delta
+Output Delta: /Users/spartan/data-pipeline/project_demo/lake/feature/drugs_augmented_delta
+
+Majority class size: 17
+Target per minority: 13  (ratio=0.80)
+Replication cap K_MAX: 3
+Selected minority classes (2512):
+  - count=    1, K=3: Used to produce controlled hypotension during surgical procedures and in hypertensive crises.
+  - count=    1, K=3: Molindone is used for the management of the manifestations of psychotic disorders.
+  - count=    1, K=3: Investigated for use/treatment in muscular dystrophy.
+  - count=    1, K=3: Ripretinib is indicated to treat adults diagnosed with advanced gastrointestinal stromal tumor (GIST...
+  - count=    1, K=3: theobromine is used as a vasodilator, a diuretic, and heart stimulant. And similar to caffeine, it m...
+  - count=    1, K=3: Ivosidenib is an isocitrate dehydrogenase-1 (IDH1) inhibitor approved for use in the US and Europe. ...
+  - count=    1, K=3: Empagliflozin is indicated as an adjunct to diet and exercise to improve glycemic control in patient...
+  - count=    1, K=3: Romidepsin is indicated for the treatment of cutaneous T-cell lymphoma (CTCL) in adult patients who ...
+  - count=    1, K=3: For diagnostic imaging. Primarily indicated in diagnostic fluorescein angiography or angioscopy of t...
+  - count=    1, K=3: Investigated for use/treatment in ovarian cancer, lung cancer, and breast cancer.
+
+=== COUNTS ===
+Original rows:           2,827
+Augmented rows (new):    7,536
+Final combined total:    10,363
+
+=== SAMPLE ORIGINAL (minority examples) ===
+DB00117: The actions of supplemental L-histidine are entirely unclear. It may have some immunomodulatory as w... | an essential amino acid that is required for the production of histamine.
+DB00126: Used to treat vitamin C deficiency, scurvy, delayed wound and bone healing, urine acidification, and... | a six carbon compound related to glucose. it is found naturally in citrus fruits and many vegetables...
+DB00150: Tryptophan may be useful in increasing serotonin production, promoting healthy sleep, managing depre... | an essential amino acid that is necessary for normal growth in infants and for nitrogen balance in a...
+DB00162: For the treatment of vitamin A deficiency. | retinol and derivatives of retinol that play an essential role in metabolic functioning of the retin...
+DB00181: Oral baclofen is indicated for the treatment of spasticity resulting from multiple sclerosis and is ... | baclofen is a gamma-aminobutyric acid (gaba) agonist used as a skeletal muscle relaxant. although or...
+
+=== SAMPLE AUGMENTED ===
+DB00117: The actions of supplemental L-histidine are entirely unclear. It may have some immunomodulatory as w... | an essential amino acid that is required production of histamine.
+DB00117: The actions of supplemental L-histidine are entirely unclear. It may have some immunomodulatory as w... | essential an amino acid that is required for the production of histamine.
+DB00117: The actions of supplemental L-histidine are entirely unclear. It may have some immunomodulatory as w... | an essential amino acid required for the production of histamine.
+DB00126: Used to treat vitamin C deficiency, scurvy, delayed wound and bone healing, urine acidification, and... | a six carbon compound related to glucose. found naturally in fruits and many vegetables. ascorbic an...
+DB00126: Used to treat vitamin C deficiency, scurvy, delayed wound and bone healing, urine acidification, and... | a six carbon considered related to glucose. it is found naturally in citrus fruits and many vegetabl...
+
+=== CLASS BALANCE (before → after) ===
+  pre: For the treatment and management of opiate dependence. It is sometimes used to treat severe pain in ... : 1
+  post: Investigated for use/treatment in irritable bowel syndrome (IBS). : 2
+  ---
+  pre: Molindone is used for the management of the manifestations of psychotic disorders. : 1
+  post: For the treatment of epilepsy. : 2
+  ---
+  pre: Atazanavir is indicated in combination with other antiretroviral agents for the treatment of HIV-1 i... : 1
+  post: Tedizolid is indicated for the treatment of acute bacterial infections of the skin and skin structur... : 2
+  ---
+  pre: Ripretinib is indicated to treat adults diagnosed with advanced gastrointestinal stromal tumor (GIST... : 1
+  post: Investigated for use/treatment in leukemia (myeloid). : 2
+  ---
+  pre: Investigated for use/treatment in muscular dystrophy. : 1
+  post: Investigated for use/treatment in gastroesophageal reflux disease (GERD) and gastroparesis. : 2
+  ---
+  pre: Ivosidenib is an isocitrate dehydrogenase-1 (IDH1) inhibitor approved for use in the US and Europe. ... : 1
+  post: Investigated for use/treatment in schizophrenia and schizoaffective disorders. : 2
+  ---
+  pre: Glyburide is indicated alone or as part of combination product with metformin, as an adjunct to diet... : 1
+  post: For the treatment of obesity. : 2
+  ---
+  pre: Romidepsin is indicated for the treatment of cutaneous T-cell lymphoma (CTCL) in adult patients who ... : 1
+  post: For the prevention of itching associated with allergic conjunctivitis. : 2
+  ---
+  pre: Alfacalcidol is indicated in adult patients with chronic renal failure for the management of hypocal... : 1
+  post: Investigated for use/treatment in alzheimer's disease and schizophrenia and schizoaffective disorder... : 2
+  ---
+  pre: Investigated for use/treatment in ovarian cancer, lung cancer, and breast cancer. : 1
+  post: Investigated for use/treatment in atherosclerosis. : 2
+  ---

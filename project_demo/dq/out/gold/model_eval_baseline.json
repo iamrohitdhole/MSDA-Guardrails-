@@ -1,0 +1,10 @@
+[
+  {
+    "model_name": "Baseline - description -> indication",
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "roc_auc_macro": null
+  }
+]

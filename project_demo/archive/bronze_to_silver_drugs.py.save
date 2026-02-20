@@ -1,0 +1,14 @@
+from pyspark.sql import SparkSession
+
+spark = (SparkSession.builder
+         .appName("bronze_to_silver_drugs")
+         .getOrCreate())
+
+bronze_path = "s3a://bronze/raw_xml_drugs_parquet/"
+
+df = spark.read.parquet(bronze_path)
+
+print("Bronze row count:", df.count())
+df.printSchema()
+df.show(5, truncate=False)
+

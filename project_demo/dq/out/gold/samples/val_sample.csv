@@ -1,0 +1,8 @@
+drug_id,drug_name,avg_mass,description,indication,mechanism,toxicity,ingest_dt
+DB07041,"N-[2-(2,4-diaminopyrido[2,3-d]pyrimidin-7-yl)-2-methylpropyl]-4-phenoxybenzamide",428.4864,,__MISSING__,,,2025-11-04
+DB06249,Arzoxifene,475.6,,__RARE__,"Arzoxifene is a selective estrogen receptor modulator (SERM) 
+which antagonizes estrogen in mammary and uterine tissue, but acts as an estrogen receptor agonist in bone tissue. Arzoxifene reduces bone loss and risk of osteoperosis and decreases serum cholesterol.
+",,2025-11-04
+DB13618,Ipriflavone,280.3178,,__MISSING__,,,2025-11-04
+DB01981,"3,6-Anhydro-2-(hydrogen sulfate)-alpha-D-galactopyranose",242.204,,__MISSING__,,,2025-11-04
+DB08569,"3-PYRIDIN-4-YL-2,4-DIHYDRO-INDENO[1,2-.C.] PYRAZOLE",437.332,,__MISSING__,,,2025-11-04

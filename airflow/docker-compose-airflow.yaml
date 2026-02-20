@@ -1,0 +1,40 @@
+version: '3.9'
+
+services:
+  airflow-web:
+    image: apache/airflow:2.9.0
+    container_name: airflow_web
+    restart: always
+    environment:
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      GROQ_API_KEY: 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
+      S3_ENDPOINT: http://host.docker.internal:9000   # points to running MinIO
+    volumes:
+      - airflow_home:/opt/airflow
+      - ./dags:/opt/airflow/dags
+    ports:
+      - "8081:8080"
+    command: >
+      bash -c "airflow db init && airflow webserver"
+
+  airflow-scheduler:
+    image: apache/airflow:2.9.0
+    container_name: airflow_scheduler
+    restart: always
+    environment:
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      GROQ_API_KEY: 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
+      S3_ENDPOINT: http://host.docker.internal:9000
+    volumes:
+      - airflow_home:/opt/airflow
+      - ./dags:/opt/airflow/dags
+    command: >
+      bash -c "airflow scheduler"
+
+volumes:
+  airflow_home:

@@ -1,0 +1,6 @@
+drug_id,drug_name,avg_mass,description,indication,mechanism,toxicity,ingest_dt
+DB13918,Diclofop-methyl,341.186,Herbicide for control of wild oat & foxtails in cereal crops.,__MISSING__,,,2025-11-04
+DB18749,Soquelitinib,514.66,,__MISSING__,,,2025-11-04
+DB08414,PNU-142721,306.771,,__MISSING__,,,2025-11-04
+DB06865,6-CARBAMIMIDOYL-2-[2-HYDROXY-6-(4-HYDROXY-PHENYL)-INDAN-1-YL]-HEXANOIC ACID,382.4528,,__MISSING__,,,2025-11-04
+DB13664,Formocortal,569.06,,__MISSING__,,,2025-11-04

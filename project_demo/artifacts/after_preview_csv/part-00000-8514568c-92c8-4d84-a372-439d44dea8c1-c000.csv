@@ -1,0 +1,21 @@
+drugbank_id,name,cas_number,state
+BIOD00024,Lepirudin,138068-37-8,solid
+BIOD00071,Cetuximab,205923-56-4,liquid
+BIOD00001,Dornase alfa,143831-71-4,liquid
+BIOD00084,Denileukin diftitox,173146-27-5,liquid
+BIOD00052,Etanercept,185243-69-0,liquid
+DB02351,Bivalirudin,128270-60-0,solid
+BIOD00009,Leuprolide,53714-56-0,solid
+BIOD00043,Peginterferon alfa-2a,198153-51-4,liquid
+BIOD00050,Alteplase,105857-23-6,liquid
+BIOD00033,Sermorelin,86168-78-7,liquid
+DB00084,Interferon alfa-n1,74899-72-2,liquid
+BIOD00032,Darbepoetin alfa,209810-58-2,liquid
+BIOD00030,Urokinase,9039-53-6,liquid
+BIOD00113,Goserelin,65807-02-5,solid
+BIOD00013,Reteplase,133652-38-7,liquid
+DB08923,Erythropoietin,11096-26-7,liquid
+BIOD00025,Salmon calcitonin,47931-85-1,liquid
+BIOD00023,Interferon alfa-n3,"",liquid
+BIOD00094,Pegfilgrastim,208265-92-3,liquid
+BIOD00035,Sargramostim,123774-72-1,liquid

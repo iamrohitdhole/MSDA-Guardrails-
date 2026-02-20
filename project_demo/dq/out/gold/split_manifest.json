@@ -1,0 +1,99 @@
+{
+  "mode": "stratified",
+  "total_rows": 11601,
+  "ratios_target": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "rows": {
+    "train": 8120,
+    "val": 1741,
+    "test": 1740
+  },
+  "id_column": "drug_id",
+  "overlap_checks": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0
+  },
+  "notes": {
+    "stage1_mode": "stratified",
+    "stage2_mode": "random_fallback_small_class",
+    "rare_policy": "pooled_only"
+  },
+  "stratify_column": "indication",
+  "class_distribution_top": {
+    "train": {
+      "__MISSING__": 6141,
+      "__RARE__": 1758,
+      "Investigated for use/treatment in cancer/tumors (unspecified).": 12,
+      "Investigated for use/treatment in solid tumors.": 10,
+      "For the treatment of depression.": 8,
+      "Investigated for use/treatment in diabetes mellitus type 2.": 8,
+      "For the treatment of hypertension.": 7,
+      "Investigated for use/treatment in alzheimer's disease.": 6,
+      "Investigated for use/treatment in HIV infection.": 5,
+      "For the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses. Also used to treat endocrine (hormonal) disorders (adrenal insufficiency, Addisons disease). It is also used to treat many immune and allergic disorders, such as arthritis, lupus, severe psoriasis, severe asthma, ulcerative colitis, and Crohn's disease.": 5,
+      "For nutritional supplementation, also for treating dietary shortage or imbalance": 5,
+      "Indicated for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN), to maintain chromium serum levels and to prevent depletion of endogenous stores and subsequent deficiency symptoms [FDA Label].": 4,
+      "Investigated for use/treatment in hepatitis (viral, C).": 4,
+      "Investigated for use/treatment in pain (acute or chronic).": 4,
+      "No approved therapeutic indications. ": 4,
+      "Used in preventing and treating iron-deficiency anemia.": 4,
+      "Investigated for use/treatment in hepatitis (viral, B).": 4,
+      "Investigated for use/treatment in rheumatoid arthritis.": 3,
+      "For the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses.": 3,
+      "Investigated for use/treatment in depression.": 3
+    },
+    "val": {
+      "__MISSING__": 1319,
+      "__RARE__": 369,
+      "For the treatment of depression.": 3,
+      "Investigated for use/treatment in cancer/tumors (unspecified).": 3,
+      "Indicated for use as a supplement to intravenous solutions given for total parenteral nutrition (TPN), to maintain chromium serum levels and to prevent depletion of endogenous stores and subsequent deficiency symptoms [FDA Label].": 2,
+      "Used in preventing and treating iron-deficiency anemia.": 2,
+      "Investigated for use/treatment in diabetes mellitus type 2.": 2,
+      "Investigated for use/treatment in alzheimer's disease.": 2,
+      "Investigated for use/treatment in HIV infection.": 2,
+      "Investigated for use/treatment in solid tumors.": 2,
+      "For the treatment of hypertension.": 2,
+      "Investigated for use/treatment in atopic dermatitis.": 1,
+      "Investigated for use/treatment in depression.": 1,
+      "For the treatment of obesity.": 1,
+      "For the treatment of insomnia.": 1,
+      "For treatment of severe infections caused by susceptible bacteria.": 1,
+      "Investigated for use/treatment in ulcerative colitis.": 1,
+      "Investigated for use/treatment in hepatitis (viral, C).": 1,
+      "For use as an over the counter calcium and phosphate supplement, antacid, or a source of calcium and phosphate in toothpaste [FDA Label] [L851].": 1,
+      "Investigated for use/treatment in hepatitis (viral, B).": 1
+    },
+    "test": {
+      "__MISSING__": 1314,
+      "__RARE__": 385,
+      "Investigated for use/treatment in cancer/tumors (unspecified).": 2,
+      "Investigated for use/treatment in solid tumors.": 2,
+      "Investigated for use/treatment in pain (acute or chronic).": 2,
+      "Investigated for use/treatment in arrhythmia and atrial fibrillation.": 1,
+      "Investigated for use/treatment in breast cancer.": 1,
+      "Investigated for use/treatment in rheumatoid arthritis.": 1,
+      "For the treatment of severe psoriasis in adults.": 1,
+      "Investigated for use/treatment in obesity.": 1,
+      "Investigated for use/treatment in hepatitis (viral, C).": 1,
+      "Investigated for use/treatment in schizophrenia and schizoaffective disorders.": 1,
+      "Investigated for use/treatment in macular degeneration.": 1,
+      "Investigated for use/treatment in diabetes mellitus type 2.": 1,
+      "For the treatment of hypertension.": 1,
+      "Diloxanide is used alone as a primary agent in the treatment of asymptomatic (cyst passers) intestinal amebiasis caused by Entamoeba histolytica. Diloxanide may also be used concurrently, or sequentially, with other agents such as the nitroimidazoles (eg. metronidazole) in the treatment of invasive or extraintestinal forms of amebiasis.\r\n": 1,
+      "Investigated for use/treatment in brain cancer and cancer/tumors (unspecified).": 1,
+      "For the treatment of depression.": 1,
+      "For the treatment of moderate and severe hypertension, either alone or as an adjunct, and for the treatment of renal hypertension.": 1,
+      "Investigated for use/treatment in hyperlipidemia.": 1
+    }
+  },
+  "ratios_realized": {
+    "train": 0.6999396603741057,
+    "val": 0.1500732695457288,
+    "test": 0.1499870700801655
+  }
+}
