@@ -74,7 +74,7 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioStrongPass123")
 
 # Groq
 GROQ_API_KEY_ENV = "GROQ_API_KEY"
-GROQ_MODEL = "llama-3.3-70b-versatile"  # Current recommended Groq model
+GROQ_MODEL = "phi-3.5-mini-8k-instruct"  # Default hosted model
 
 # Batch / throttling
 MAX_RECORDS = 25          # limit per run to control token cost

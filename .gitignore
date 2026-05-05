@@ -1,0 +1,105 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Testing & type checking
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Project-specific: local outputs and temp files
+artifacts/demo2/inference_*.jsonl
+artifacts/demo2/metrics*.json
+artifacts/demo2/plots/*.png
+artifacts/demo2/evidence_index.pkl
+
+# Keep the artifacts directory structure
+!artifacts/demo2/.gitkeep
+!artifacts/demo2/plots/.gitkeep
+
+# Spark / Delta lake
+spark-warehouse/
+derby.log
+metastore_db/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Secrets / credentials
+.env.local
+.env.*.local
+secrets.yaml
+credentials.json
+
+# Large data files (raw DrugBank XML)
+project_demo/raw/*.xml
+
+# Generated evidence / demo artifacts
+data/evidence/drugs_evidence.parquet
+data/evidence/drugs_evidence_index.pkl
+artifacts/demo2/evidence_index.pkl
+
+# More local/generated artifacts
+artifacts/dq/**
+!artifacts/dq/.gitkeep
+
+# Keep only intended placeholder files in demo artifacts
+artifacts/demo2/**
+!artifacts/demo2/.gitkeep
+!artifacts/demo2/plots/
+!artifacts/demo2/plots/.gitkeep
+
+# Evidence/cache outputs
+data/evidence/**
+!data/evidence/.gitkeep
+
+# Silver/parquet outputs
+silver/**/*.parquet
+silver/**/*.csv
+silver/**/_SUCCESS
+
+# Spark crc / temp files
+*.crc
+._*
+_SUCCESS
+
+# Python cache everywhere
+**/__pycache__/
+
+# Airflow / local runtime leftovers
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# Optional: local docs/exports if generated
+*.snappy.parquet
