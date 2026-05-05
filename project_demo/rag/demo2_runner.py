@@ -131,7 +131,6 @@ def _make_scope_blocked_record(
         "coverage_ratio": 0.0,
         "guardrail_messages": [f"INPUT_SCOPE_BLOCKED: {scope_rule_tag}"],
         "llm_model": model_id,
-        "should_allow": False,
     }
 
 
@@ -169,9 +168,6 @@ def _build_output_record(
         safe_refusal = final_text
         refusal_reason = result.rule_tag
         hallucination_risk = "blocked"
-
-    drug_name = str(prompt.get("drug_name") or "").strip()
-    summary_txt = str(llm_output.get("summary", "")).lower()
 
     citations = [
         {
@@ -243,11 +239,6 @@ def _build_output_record(
         "coverage_ratio": result.coverage_ratio,
         "guardrail_messages": result.messages,
         "llm_model": model_id,
-        "should_allow": (
-            bool(drug_name)
-            and drug_name.lower() not in ("", "unknown")
-            and drug_name.lower() in summary_txt
-        ),
     })
     return rec
 
